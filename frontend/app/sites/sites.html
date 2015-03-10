@@ -1,0 +1,37 @@
+
+<head>
+
+	<title>River Levels</title>
+
+
+
+</head>
+<body>
+    <!--<button ng-click="loginModal()">Login</button>-->
+
+        <h1>River Levels</h1>
+
+    Search: <input ng-model="searchTerm"/>
+    <button ng-click="openModal()">Can't find a site?</button>
+
+    <div>
+        <br>
+        <input id="discharge" size="16" readonly="readonly" class="flow"/>
+    </div>
+    <!--<div class="container">-->
+     <div class="container-fluid">
+        <div class="btn-group">
+
+            <div ng-repeat="site in sites | orderBy:'name' | filter:searchTerm">
+                <ul class="nav nav-pills nav-stacked">
+                    <button class="btn btn-sm btn-success" ng-click="fillInputBoxAndGetFlows(site.site)">
+                     {{site.description}}
+                    </button>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+

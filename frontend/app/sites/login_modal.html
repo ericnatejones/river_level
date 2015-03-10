@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<div id="responsive" class="modal hide fade" tabindex="-1" data-width="760">
+
+    <div class="modal-body">
+        <div class="row-fluid">
+            <div class="span6">
+
+                <input ng-model="username" placeholder="username">
+            </div>
+                <input ng-model="password" placeholder="password">
+
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="input-group">
+            <button ng-click="addUser()">login</button>
+        </div>
+
+        <div class="input-group">
+            <input type="button" ng-click="closeModal()" value="close"/>
+        </div>
+    </div>
+</div>
+</body>
+</html>
