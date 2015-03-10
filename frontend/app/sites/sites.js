@@ -172,6 +172,7 @@ angular.module('myApp.sites', ['ngRoute'])
         } else {
            $scope.site = "not site #";
         }
+        $scope.closeModal()
     };
 
 
