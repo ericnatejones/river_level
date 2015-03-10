@@ -101,7 +101,7 @@ angular.module('myApp.sites', ['ngRoute'])
         $scope.getFlows('from database');
     };
 
-    Restangular.all('sites').getList().then(function (data) {
+    Restangular.all('sites/').getList().then(function (data) {
         $scope.sites = data;
     });
 
