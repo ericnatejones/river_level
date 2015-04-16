@@ -2,23 +2,25 @@
 <!--vvvvvvvvv-->
 <div id="responsive" class="modal hide fade" tabindex="-1" data-width="760">
     <h4>
-        Add a site to our database here by pasting USGS's 8 digit site number.
+        add a site to our database here by pasting USGS's 8 digit site number.
     </h4>
     <div class="modal-body">
         <div class="row-fluid">
             <div class="span6">
 
-                <input name="site" type="text" ng-model="site" size="9" maxlength="8" />
+                <input placeholder="site" name="site" type="text" ng-model="site" size="9" maxlength="8" />
             </div>
-                <a href="http://wdr.water.usgs.gov/nwisgmap/index.html">Find sites </a>
+                <a href="http://wdr.water.usgs.gov/nwisgmap/index.html">find sites </a>
+            <br>
 
         </div>
     </div>
+    <br>
     <div class="modal-footer">
        <div class="input-group">
-            <input type="button" ng-click="getFlows('manual')" value="Add site to database"/>
+            <input type="button" ng-click="getFlows('manual')" value="add site to database"/>
         </div>
-
+        <br>
         <div class="input-group">
             <input type="button" ng-click="closeModal()" value="close"/>
         </div>

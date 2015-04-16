@@ -53,16 +53,16 @@ angular.module('myApp.sites', ['ngRoute'])
         }
     };
     var apiCall = function(whereFrom) {
-    var addSite = function() {
-        Restangular.all('add-site/').customPOST(Site).then(function () {
+        var addSite = function() {
+            Restangular.all('add-site/').customPOST(Site).then(function () {
 
-        },
-        function () {
-        console.log(Site.description);
-        console.log(Site.site)
-        });
+            },
+            function () {
+                console.log(Site.description);
+                console.log(Site.site)
+            });
 
-    };
+        };
         $.ajax({
             url: "http://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + $scope.site + "&variable=00060,00065",
             dataType: 'json',
@@ -116,16 +116,16 @@ angular.module('myApp.sites', ['ngRoute'])
 .controller('OpenModalCtrl', function (Restangular, $scope, $modalInstance) {
     var Site = {};
     var apiCall = function(whereFrom) {
-    var addSite = function() {
-        Restangular.all('add-site/').customPOST(Site).then(function () {
+        var addSite = function() {
+            Restangular.all('add-site/').customPOST(Site).then(function () {
 
-        },
-        function () {
-        console.log(Site.description);
-        console.log(Site.site)
-        });
+            },
+            function () {
+                console.log(Site.description);
+                console.log(Site.site)
+            });
 
-    };
+        };
         $.ajax({
             url: "http://waterservices.usgs.gov/nwis/iv/?format=json&sites=" + $scope.site + "&variable=00060,00065",
             dataType: 'json',

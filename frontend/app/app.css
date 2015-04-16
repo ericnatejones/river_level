@@ -6,6 +6,11 @@
   /*margin-top: -21px;*/
 
 /*}*/
+
+h1 {
+  font-family: "Impact, Charcoal, sans-serif";
+}
+
 .flow {
   background-color: #c9eae8;
   text-align: center;
@@ -16,18 +21,33 @@ input {
 }
 
 .container-fluid {
-  width:500px;
-  margin:0 auto;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  width:100%;
+  /*margin:0 auto;*/
   position:relative;
+  left: -25px;
   overflow: auto;
   height: 220px;
   /*overflow-scrolling: ;*/
 }
+@media only screen and (max-device-width: 480px) {
+  .container-fluid {
+    margin-bottom: 6%;
+    margin-top: 4%;
+  }
+}
+
+
 body {
+  
   background-color: #e5f6fd;
+
   text-align: center;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  overflow: hidden;
 }
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;

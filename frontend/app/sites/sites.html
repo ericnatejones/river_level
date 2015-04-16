@@ -9,14 +9,14 @@
 <body>
     <!--<button ng-click="loginModal()">Login</button>-->
 
-        <h1>River Levels</h1>
+        <h1>river levels</h1>
 
-    Search: <input ng-model="searchTerm"/>
-    <button ng-click="openModal()">Can't find a site?</button>
+    <input placeholder="search" ng-model="searchTerm"/>
+
 
     <div>
         <br>
-        <input id="discharge" size="16" readonly="readonly" class="flow"/>
+        <input placeholder="flow in CFS" id="discharge" size="16" readonly="readonly" class="flow"/>
     </div>
     <!--<div class="container">-->
      <div class="container-fluid">
@@ -33,5 +33,7 @@
             </div>
         </div>
     </div>
+
+  <button ng-click="openModal()">can't find a site?</button>
 </body>
 
